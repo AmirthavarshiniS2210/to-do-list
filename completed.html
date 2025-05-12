@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Completed Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TaskFlow</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="completed.html" class="active">Completed</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <div class="tasks-container" id="completed-tasks-container">
+                <!-- Completed tasks will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 TaskFlow. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="completed.js"></script>
+</body>
+</html>

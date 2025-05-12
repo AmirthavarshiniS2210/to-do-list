@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TaskFlow</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="completed.html">Completed</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="dashboard-header">
+            <h2>Your Tasks</h2>
+            <div class="actions">
+                <a href="add-task.html" class="button">+ Add Task</a>
+                <button id="view-all" class="button secondary">View All</button>
+            </div>
+        </section>
+        
+        <section class="task-list" id="active-tasks">
+            <h3>Active Tasks</h3>
+            <div class="tasks-container" id="active-tasks-container">
+                <!-- Tasks will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 TaskFlow. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
